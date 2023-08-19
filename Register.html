@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="register_process.php" method="post">
+            <label for="registerFullname">Enter Fullname:</label>
+            <input type="text" id="registerFullname" name="registerFullname" required>
+            <label for="registerUsername">Enter Username:</label>
+            <input type="text" id="registerUsername" name="registerUsername" required>
+            <label for="registerPassword">Enter Password:</label>
+            <input type="password"  id="registerPassword" minlength="4" maxlength="8"  size = "8" name="registerPassword" required> 
+            <button class="submit-button" type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+</html>
