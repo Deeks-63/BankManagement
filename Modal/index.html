@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books Management App</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href ="modal.css">
+  <script src="modal.js"></script>
+</head>
+<body>
+  <div class="header">
+      <div class="left-section">
+          <h1 class="left-heading">Books Web</h1>
+          <h2 class="subheading">Authors</h2>
+          <h2 class="subheading"><a onclick="showAddAuthor()" href="#addauthor">Add Author</a> </h2>
+          <h2 class="subheading">Books</h2>
+          <h2 class="subheading"><a onclick="showAddBook()" href="#addbook">Add Book</a></h2>
+      </div>
+      <h1 class="right-heading">Members</h1>
+  </div>
+
+  <div class="main-section">
+    <h2 class="author-heading">Author List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th class="table-heading">Photo</th>
+                <th class="table-heading">Name</th>
+                <th class="table-heading">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="author1.jpg" alt="Author 1"></td>
+                <td>Author Name 1</td>
+                <td class="actions">
+                    <button class="action-button details table-heading">Details</button>
+                    <button class="action-button favorite">Add to Favorite</button>
+                    <button class="action-button edit" onclick="showEditAuthor()">Edit</button>
+                    <button class="action-button delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="author2.jpg" alt="Author 2"></td>
+                <td>Author Name 2</td>
+                <td class="actions">
+                    <button class="action-button details">Details</button>
+                    <button class="action-button favorite">Add to Favorite</button>
+                    <button class="action-button edit" onclick="showEditAuthor()">Edit</button>
+                    <button class="action-button delete">Delete</button>
+                </td>
+            </tr>
+            <!-- Add more rows here if needed -->
+        </tbody>
+    </table>
+  </div>
+
+  <div id = "addauthor">
+    <div class="overlay"></div>
+    <div class = "authormodal">
+        <span onclick="closeAddAuthor()">&times;</span>
+        <div class="addAuthor">
+            <form action="">
+                <h2>ADD AUTHOR</h2>
+                <label for="">Name</label>
+                <input type = "text" />
+                <br>
+                <label for="">Biography</label>
+                <textarea></textarea>
+                <br>
+                <label for="">Photo</label>
+                <input type="url" />
+                <br>
+                <label for="">Email</label>
+                <input type="email" />
+                <br>
+                
+                <button onclick="closeAddAuthor()">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <div id = "editauthor">
+    <div class="overlay"></div>
+    <div class = "editauthormodal">
+        <span onclick="closeAddAuthor()">&times;</span>
+        <div class="editAuthor">
+            <form action="">
+                <h2>EDIT AUTHOR</h2>
+                <label for="">Name</label>
+                <input type = "text" />
+                <br>
+                <label for="">Biography</label>
+                <textarea></textarea>
+                <br>
+                <label for="">Photo</label>
+                <input type="url" />
+                <br>
+                <label for="">Email</label>
+                <input type="email" />
+                <br>
+                <button onclick="closeEditAuthor()">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+  </div>
+    
+  <div id = "addbook">
+    <div class="overlay"></div>
+    <div class = "bookmodal">
+        <span onclick = "closeAddBook()">&times;</span>
+        <div class="addbook">
+            <form action="">
+                <h2>ADD BOOK</h2>
+                <label for="">Title</label>
+                <input type = "text" />
+                <br>
+                <label for="">Description</label>
+                <textarea></textarea>
+                <br>
+                <label for="">Author ID</label>
+                <input type="text" />
+                <br>
+                <label for="">Author Name</label>
+                <input type="text" />
+                <br>
+                <label for="">Cover Photo</label>
+                <input type="url" />
+                <br>
+                <button onclick="closeAddBook()">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="quote">"A room without books is like a body without a soul." - Marcus Tullius Cicero</p>
+    <!-- <a class="contact-link" href="contact.html">Contact Us</a> -->
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+        
+    </div>
+</div>
+</body>
+</html>
