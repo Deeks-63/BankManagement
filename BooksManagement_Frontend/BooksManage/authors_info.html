@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books Management App</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .material-symbols-outlined {
+      font-size: 48px;
+      font-weight: bolder;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    </style>
+</head>
+<body>
+  <div class="header">
+      <div class="left-section">
+          <span class="material-symbols-outlined icon">
+            local_library
+          </span>
+          <h1 class="left-heading">Books Web</h1>
+          <h2 class="subheading" onclick="getPage('index.html')">Authors</h2>
+          <h2 class="subheading">Add Authors</h2>
+          <h2 class="subheading"onclick="getPage('booksList.html')">Books</h2>
+          <h2 class="subheading">Add Books</h2>
+      </div>
+      <h1 class="right-heading">Members</h1>
+  </div>
+
+  <body>
+    <div id="author-details">Authors info</div>
+    <script src="authors_data.js"></script>
+  </body>
+
+  <div class="footer">
+    <p class="quote">"A room without books is like a body without a soul." - Marcus Tullius Cicero</p>
+    <!-- <a class="contact-link" href="contact.html">Contact Us</a> -->
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+        
+    </div>
+</div>
+</body>
+</html>

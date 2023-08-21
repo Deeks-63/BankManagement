@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login_register.css">
+</head>
+<body>
+    <div class="container"
+   
+    >
+       
+        <h2>LOGIN</h2>
+        <form action="login_process.php" method="post">
+            
+            <label for="loginEmail">Email:</label>
+            <input type="text" id="loginEmail" name="loginEmail" placeholder="Please Enter Your Email"required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword"placeholder="Please Enter Your Password" required>
+            <!-- <input type="submit" value="Login"> -->
+            <button class="submit-button" type="submit" onclick="login()">LOGIN</button>
+        </form>
+        <p> Don't have an account? <a href = "register.html"> Sign Up Here</a></p>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
